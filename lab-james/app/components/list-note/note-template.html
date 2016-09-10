@@ -1,0 +1,12 @@
+<form novalidate ng-submit="nc.save(nc.note)">
+  <label for="name"> Note: </label>
+  <input name="content" ng-model="nc.note.content">
+  <button type="submit"> + note </button>
+</form>
+
+
+<ul ng-init="nc.getNotes()">
+  <li ng-repeat="note in list.notes">
+    {{note.name}}
+  </li>
+</ul>
